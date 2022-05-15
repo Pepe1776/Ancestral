@@ -78,7 +78,7 @@ import { ref } from 'vue';
   <div class="about-info">
     On top of our exquisite steakhouse menu, aims for an ambiance that will make for a memorable fine-dining experience from the moment you pull up to the moment you leave.
 
-The luxurious Scottsdale fine-dining experience at Steakhouse begins before you even enter the restaurant. First, our valet greets guests curbside. Then, a walk down a red carpet leads into the restaurant. Once inside, lavish six-foot chandeliers draw the eye towards the ceiling, and the leather-embossed walls display classically inspired artwork and black and white family photographs. Marble floors provide an elegant touch to the decor.
+The luxurious Scottsdale fine-dining experience at Steakhouse begins before you even enter the restaurant.
   </div>
  </div>
 </section>
