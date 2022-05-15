@@ -394,7 +394,7 @@ input {
   }
   .btn-cont {
     position: sticky;
-    margin-top: 220%;
+    margin-top: 150%;
     left: 0;
     margin-left: 10%;
     width: 100%;
@@ -437,10 +437,13 @@ input {
 
   }
   .about-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .about-img {
     width: 200px;
+  }
+  .about-info {
+    font-size: 1.5rem;
   }
 }
 
