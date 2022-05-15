@@ -59,9 +59,9 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
   margin-top: 60px;
 }
 .btn {
-  background-color: #ffae2c70;
+  background-color: #ffae2c8d;
   color: #000000;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   padding: 10px;
   margin-top: 40%;
   margin-left: 30%;
@@ -78,7 +78,7 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
   color: #000000;
   border: 1px solid #000000;
   padding: 10px;
-  margin-top: 15%;
+  margin-top: 5%;
   width: min-content;
   height: min-content;
   line-height: 1;
@@ -179,7 +179,7 @@ display: none;
   border-radius: 5%;
 }
 .res-title {
-  margin-top: -5%;
+  margin-top: 0%;
   font-size: 5rem;
 }
 .form {
@@ -187,7 +187,7 @@ display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -5%;
+  margin-top: 0%;
 }
 
 input {
