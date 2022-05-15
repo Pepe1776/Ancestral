@@ -121,7 +121,12 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
 .fade-leave-to {
   opacity: 0;
 }
+@media (max-width: 1700px) {
+  .main-cont {
+  }
+}
 
+ 
 .btn {
   background-color: #ffae2c70;
   color: #ffffff;
@@ -243,12 +248,12 @@ display: none;
   transform: translate(-50%, -50%);
   background-color: #ffae2ca8;
   width: 50%;
-  height: 70%;
+  height: 90%;
   border-radius: 5%;
   box-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
 }
 .about {
-  height: 80%;
+  height: 90%;
 }
 .res-title {
    font-family: 'Yellowtail', cursive;
@@ -289,7 +294,7 @@ input {
 .close2 {
   display: grid;
   place-items: center;
-  top: -55%;
+  top: -45%;
   right: 2%;
   background-color: #ffffff;
   font-size: 7rem;
