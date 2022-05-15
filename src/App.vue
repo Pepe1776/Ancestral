@@ -341,7 +341,7 @@ input {
   font-weight: bold;
   font-size: 2rem;
   text-shadow: #ffffff -1px 1px 5px, #ffae2ca8 -10px 10px 10px;
-  margin: 4%;
+  margin: 6%;
 }
 .people {
   display: flex;
