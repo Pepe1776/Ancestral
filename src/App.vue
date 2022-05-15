@@ -89,20 +89,22 @@ The luxurious Scottsdale fine-dining experience at Steakhouse begins before you 
 #app {
 
 
-fo.v-enter-active,
+font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 60px;
+}
+
+.v-enter-active,
 .v-leave-active {
   transition: opacity 0.5s ease;
 }
 
 .v-enter-from,
 .v-leave-to {
-  opacity: 0;
-}nt-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #ffffff;
-  margin-top: 60px;
-}
+  opacity: 0;}
+
 .btn {
   background-color: #ffae2c70;
   color: #ffffff;
@@ -307,7 +309,7 @@ input {
 }
 .about-title {
   color: #000000;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-top: -5%;
   text-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
@@ -315,7 +317,8 @@ input {
 }
 .about-info {
   color: #000000;
-  font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;
   margin-top: -5%;
   text-shadow: #ffffff -1px 1px 30px, #ffae2ca8 -10px 10px 10px;
   margin: 2%;
@@ -338,7 +341,7 @@ input {
 }
 .about-name {
   color: #000000;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-top: -5%;
   text-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
@@ -346,7 +349,7 @@ input {
 }
 .about-name-title{
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-top: -5%;
   text-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
