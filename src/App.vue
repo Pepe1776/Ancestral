@@ -35,8 +35,9 @@ import { ref } from 'vue';
   <button @click="about = !about" class="btn">About_Us</button>
   </div>
 </section>
-<transition >
+
 <section>
+  <transition name="fade">
   <div class="res" v-show="res">
   <h3 class="res-title">Reservations</h3><button @click="res = !res" class="btn close">X</button>
   <form class="form" @submit="onSubmit">
@@ -48,15 +49,19 @@ import { ref } from 'vue';
   <buttton class="btn2" value="Save Information" @click="onSubmit()" type="submit">Submit</buttton>
   </form>
   </div>
+  </transition>
 </section>
-</transition>
+
 <section>
+  <transition name="fade">
   <div class="menu" v-show="menu">
   <button @click="menu = !menu" class="btn close close2">X</button>
   <img src="./assets/Menu-Oct-2021.jpg" alt="menu" class="menu-img" />
   </div>
+  </transition>
 </section>
 <section>
+   <transition name="fade">
   <div class="about" v-show="about">
   <button @click="about = !about" class="btn close">X</button>
   <img src="./assets/res.jpg" alt="chef" class="about-img" />
@@ -81,8 +86,10 @@ import { ref } from 'vue';
 The luxurious Scottsdale fine-dining experience at Steakhouse begins before you even enter the restaurant.
   </div>
  </div>
+ </transition>
 </section>
 </div>
+
 </template>
 
 <style>
@@ -104,6 +111,16 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
 .v-enter-from,
 .v-leave-to {
   opacity: 0;}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 
 .btn {
   background-color: #ffae2c70;
@@ -272,6 +289,7 @@ input {
 .close2 {
   display: grid;
   place-items: center;
+  top: -55%;
   right: 2%;
   background-color: #ffffff;
   font-size: 7rem;
@@ -303,12 +321,12 @@ input {
 
 }
 .about-face {
-  width: 300px;
+  width: 200px;
   object-fit: fill;
   border-radius: 50%;
   opacity: 0.9;
-    box-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
-
+  box-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
+  margin-top: 20%;
 }
 .about-title {
   color: #000000;
@@ -322,7 +340,7 @@ input {
   color: #000000;
   font-weight: bold;
   font-size: 2rem;
-  margin-top: -5%;
+  margin-top: -10%;
   text-shadow: #ffffff -1px 1px 5px, #ffae2ca8 -10px 10px 10px;
   margin: 2%;
 }
@@ -344,7 +362,7 @@ input {
 }
 .about-name {
   color: #000000;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-top: -5%;
   text-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
