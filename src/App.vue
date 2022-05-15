@@ -121,10 +121,6 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
 .fade-leave-to {
   opacity: 0;
 }
-@media (max-width: 1700px) {
-  .main-cont {
-  }
-}
 
  
 .btn {
@@ -224,9 +220,9 @@ drop-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   display: flex;
   flex: 1, 0;
   width: 100%;
-  min-width: fit-content;
+  /* min-width: fit-content; */
   height: auto;
-  object-fit: cover;
+  /* object-fit: cover; */
   position: absolute;
   top: -100%;
   left: 0;
@@ -380,4 +376,72 @@ input {
   text-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
   margin: auto;
 }
+@media (max-width: 1700px) {
+  .main-cont {
+    width: 100%;
+   display: flexbox;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+  .hero {
+  min-width: none;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
+ min-width: 2000px;
+  }
+  .btn-cont {
+    position: sticky;
+    margin-top: 220%;
+    left: 0;
+    margin-left: 10%;
+    width: 100%;
+    height: 100%;
+
+    z-index: 3;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .about, .menu, .res {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    margin-top: 35%;
+  }
+  .menu-img {
+    object-fit: contain;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .close {
+    margin-top: 105%;
+  }
+  .close2 {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+  }
+  .about-face {
+    width: 100px;
+  box-shadow: none;
+  }
+  .about-name, .about-name-title {
+    font-size: 1.5rem;
+
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-img {
+    width: 200px;
+  }
+}
+
 </style>
