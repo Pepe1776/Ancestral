@@ -230,6 +230,9 @@ display: none;
   border-radius: 5%;
   box-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
 }
+.about {
+  height: 80%;
+}
 .res-title {
    font-family: 'Yellowtail', cursive;
   margin-top: -5%;
@@ -320,7 +323,7 @@ input {
   font-weight: bold;
   font-size: 2rem;
   margin-top: -5%;
-  text-shadow: #ffffff -1px 1px 30px, #ffae2ca8 -10px 10px 10px;
+  text-shadow: #ffffff -1px 1px 5px, #ffae2ca8 -10px 10px 10px;
   margin: 2%;
 }
 .people {
