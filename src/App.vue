@@ -203,11 +203,12 @@ input {
 }
 .close {
   position: absolute;
-  top: -80%;
+  top: -55%;
   right: 3%;
   font-size: 2rem;
   font-weight: bold;
   color: #000000;
   cursor: pointer;
+  border-radius: 50%;
 }
 </style>
