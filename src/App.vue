@@ -35,6 +35,7 @@ import { ref } from 'vue';
   <button @click="about = !about" class="btn">About_Us</button>
   </div>
 </section>
+<transition >
 <section>
   <div class="res" v-show="res">
   <h3 class="res-title">Reservations</h3><button @click="res = !res" class="btn close">X</button>
@@ -48,12 +49,55 @@ import { ref } from 'vue';
   </form>
   </div>
 </section>
+</transition>
+<section>
+  <div class="menu" v-show="menu">
+  <button @click="menu = !menu" class="btn close close2">X</button>
+  <img src="./assets/Menu-Oct-2021.jpg" alt="menu" class="menu-img" />
+  </div>
+</section>
+<section>
+  <div class="about" v-show="about">
+  <button @click="about = !about" class="btn close">X</button>
+  <img src="./assets/res.jpg" alt="chef" class="about-img" />
+  <h3 class="about-title">Open Friday, Saturday & Sunday <br> Hours 2pm-10pm</h3>
+  
+  <div class="people">
+    <div class="person">
+  <img class="about-face" src="./assets/111.jpg" alt="face pic">
+ <h5 class="about-name"> Frank Sabotianos</h5>
+ <h6 class="about-name-title">Head Chef</h6>
+ </div>
+ <div class="person">
+  <img class="about-face" src="./assets/112.jpg" alt="face pic">
+ <h5 class="about-name"> Nina Cocisita</h5>
+ <h6 class="about-name-title">Owner</h6>
+ </div>
+ 
+ </div>
+  <div class="about-info">
+    On top of our exquisite steakhouse menu, aims for an ambiance that will make for a memorable fine-dining experience from the moment you pull up to the moment you leave.
+
+The luxurious Scottsdale fine-dining experience at Steakhouse begins before you even enter the restaurant. First, our valet greets guests curbside. Then, a walk down a red carpet leads into the restaurant. Once inside, lavish six-foot chandeliers draw the eye towards the ceiling, and the leather-embossed walls display classically inspired artwork and black and white family photographs. Marble floors provide an elegant touch to the decor.
+  </div>
+ </div>
+</section>
 </div>
 </template>
 
 <style>
 #app {
-font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
+
+
+fo.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}nt-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
@@ -61,7 +105,7 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
 }
 .btn {
   background-color: #ffae2c70;
-  color: #000000;
+  color: #ffffff;
   border: 1px solid #000000;
   padding: 10px;
   margin-top: 40%;
@@ -72,6 +116,8 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
   font-size: 2rem;
   font-weight: bold;
   border-radius: 5%;
+    box-shadow: #ffffff -5px 5px 30px, #ffae2ca8 -10px 10px 10px;
+
   transition: all 0.3s ease-in-out;
 }
 .btn2 {
@@ -86,6 +132,8 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
   font-size: 2rem;
   font-weight: bold;
   border-radius: 5%;
+    box-shadow: #ffffff -5px 5px 30px, #ffae2ca8 -10px 10px 10px;
+
   transition: all 0.3s ease-in-out;
 }
 .btn:hover, .btn:focus, .btn:active, .btn2:hover, .btn2:focus, .btn2:active {
@@ -165,7 +213,7 @@ drop-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 display: none;
  margin-left: 10%;
   }
-.res {
+.res, .menu, .about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,12 +226,16 @@ display: none;
   width: 50%;
   height: 70%;
   border-radius: 5%;
+  box-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
 }
 .res-title {
+   font-family: 'Yellowtail', cursive;
   margin-top: -5%;
   font-size: 5rem;
+  text-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
 }
 .form {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,6 +244,7 @@ display: none;
 }
 
 input {
+  
   width: 100%;
   height: 40px;
   border: 1px solid #000000;
@@ -203,12 +256,100 @@ input {
 }
 .close {
   position: absolute;
-  top: -55%;
+  top: -45%;
   right: 3%;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #000000;
   cursor: pointer;
   border-radius: 50%;
+}
+.close2 {
+  display: grid;
+  place-items: center;
+  right: 2%;
+  background-color: #ffffff;
+  font-size: 7rem;
+  padding: 0px;
+  border-radius: 0;
+  width: 130px;
+  height: 110px;
+}
+.menu-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.about-img {
+  margin: auto;
+  width: 400px;
+  opacity: 0.9;
+  object-fit: fill;
+  border-radius: 20%;
+    box-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
+
+}
+.about-face {
+  width: 300px;
+  object-fit: fill;
+  border-radius: 50%;
+  opacity: 0.9;
+    box-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
+
+}
+.about-title {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: -5%;
+  text-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
+  margin: auto;
+}
+.about-info {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-top: -5%;
+  text-shadow: #ffffff -1px 1px 30px, #ffae2ca8 -10px 10px 10px;
+  margin: 2%;
+}
+.people {
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: -5%;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.about-name {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: -5%;
+  text-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
+  margin: auto;
+}
+.about-name-title{
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: -5%;
+  text-shadow: #ffffff -10px 10px 30px, #ffae2ca8 -10px 10px 10px;
+  margin: auto;
 }
 </style>
