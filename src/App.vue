@@ -109,7 +109,7 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
   justify-content: space-evenly;
   width: 100%;
   margin-top: -100%;
-  margin-left: 300%;
+  margin-left: 200%;
 }
 
 .svg {
