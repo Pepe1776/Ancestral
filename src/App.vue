@@ -9,8 +9,9 @@ import { ref } from 'vue';
   const date = ref();
   const time = ref();
   const guest = ref();
+  const special = ref();
   const onSubmit = () => {
-    console.log(form.value);
+    console.log(name.value);
   };
 </script>
 
@@ -42,8 +43,8 @@ import { ref } from 'vue';
   <input v-model="guest" name="guest" type="number" placeholder="number of guest" />
   <input v-model="date" name="date" type="date" />
   <input v-model="time" name="time" type="time" />
-  
-  <buttton class="btn2" value="Save Information" type="submit">Submit</buttton>
+  <input v-model="special" name="special" type="text" placeholder="special request" />
+  <buttton class="btn2" value="Save Information" @click="onSubmit()" type="submit">Submit</buttton>
   </form>
   </div>
 </section>
@@ -59,9 +60,9 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
   margin-top: 60px;
 }
 .btn {
-  background-color: #ffae2c8d;
+  background-color: #ffae2c70;
   color: #000000;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   padding: 10px;
   margin-top: 40%;
   margin-left: 30%;
@@ -78,7 +79,7 @@ font-family: 'Zen Loop', cursive;  -webkit-font-smoothing: antialiased;
   color: #000000;
   border: 1px solid #000000;
   padding: 10px;
-  margin-top: 5%;
+  margin-top: 15%;
   width: min-content;
   height: min-content;
   line-height: 1;
@@ -175,11 +176,11 @@ display: none;
   transform: translate(-50%, -50%);
   background-color: #ffae2ca8;
   width: 50%;
-  height: 50%;
+  height: 70%;
   border-radius: 5%;
 }
 .res-title {
-  margin-top: 0%;
+  margin-top: -5%;
   font-size: 5rem;
 }
 .form {
@@ -187,7 +188,7 @@ display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 0%;
+  margin-top: -5%;
 }
 
 input {
