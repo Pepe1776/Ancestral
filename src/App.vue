@@ -340,9 +340,8 @@ input {
   color: #000000;
   font-weight: bold;
   font-size: 2rem;
-  margin-top: -10%;
   text-shadow: #ffffff -1px 1px 5px, #ffae2ca8 -10px 10px 10px;
-  margin: 2%;
+  margin: 4%;
 }
 .people {
   display: flex;
