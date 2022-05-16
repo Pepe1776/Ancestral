@@ -385,34 +385,38 @@ input {
     align-items: center;
     }
   .hero {
-  min-width: none;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  object-position: top;
- min-width: 2000px;
+ min-height: 100%;
+ min-width: 1024px;
+ width: 100%;
+ height: auto;
+ position: fixed;
+ top: 0;
+ left: 0;
+ left: 50%;
+ margin-left: -512px;
   }
   .btn-cont {
     position: sticky;
-    margin-top: 150%;
-    left: 0;
-    margin-left: 10%;
-    width: 100%;
+    margin-top: 70%;
+    left: 47%;
+    margin-left: -15%;
+    width: 30%;
     height: 100%;
 
-    z-index: 3;
+    z-index: 1;
   }
   .btn {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .about, .menu, .res {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center;
     margin-left: 20%;
-    margin-top: 35%;
+    margin-top: 35%; */
+    z-index: 2;
   }
   .menu-img {
     object-fit: contain;
