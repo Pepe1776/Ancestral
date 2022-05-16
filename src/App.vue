@@ -424,6 +424,7 @@ input {
     margin-left: 20%;
     margin-top: 35%; */
     z-index: 2;
+    background-color: #ffae2cea;
   }
   .menu-img {
     object-fit: contain;
