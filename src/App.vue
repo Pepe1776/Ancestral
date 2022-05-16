@@ -383,6 +383,7 @@ input {
    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-left: -6%;
     }
   .hero {
  min-height: 100%;
@@ -397,9 +398,9 @@ input {
   }
   .btn-cont {
     position: sticky;
-    margin-top: 70%;
-    left: 47%;
-    margin-left: -15%;
+    margin-top: 80%;
+    left: 39%;
+    margin-left: 0%;
     width: 30%;
     height: 100%;
 
