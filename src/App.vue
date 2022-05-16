@@ -396,6 +396,12 @@ input {
  left: 50%;
  margin-left: -512px;
   }
+  .phone {
+    margin-left: 15%;
+  }
+  .sub-title {
+    margin-left: 15%;
+  }
   .btn-cont {
     position: sticky;
     margin-top: 80%;
